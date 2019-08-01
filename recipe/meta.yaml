@@ -23,12 +23,13 @@ requirements:
   run:
     - python
     - numpy
-    - six
-    - pyyaml
     - scipy
     - xarray
-    - dask
-    - landlab >=1.7
+    - dask[complete]
+    - holoviews
+    - pandas
+    - jupyter
+    - landlab >=1.9
 
 test:
   requires:
