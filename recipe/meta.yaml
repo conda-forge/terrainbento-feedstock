@@ -1,5 +1,5 @@
 
-{% set version = "1.0.1" %}
+{% set version = "1.1" %}
 
 package:
   name: terrainbento
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TerrainBento/terrainbento/archive/v{{ version }}.tar.gz
-  sha256: d1d4378d8591465c102b2a54c60c5c3f06317b83cb00dcb6a98f68b3c9253295
+  sha256: 7b1b76e5238a9263724e1f8b3a9fef367b986d84e836f4f82c6618196fca1837
 
 build:
   number: 0
@@ -23,12 +23,13 @@ requirements:
   run:
     - python
     - numpy
-    - six
-    - pyyaml
     - scipy
     - xarray
     - dask
-    - landlab >=1.7
+    - holoviews
+    - pandas
+    - jupyter
+    - landlab >=1.9
 
 test:
   requires:
