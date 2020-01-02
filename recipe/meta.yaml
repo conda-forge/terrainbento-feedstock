@@ -1,5 +1,5 @@
 
-{% set version = "1.1" %}
+{% set version = "1.1.1" %}
 
 package:
   name: terrainbento
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TerrainBento/terrainbento/archive/v{{ version }}.tar.gz
-  sha256: 7b1b76e5238a9263724e1f8b3a9fef367b986d84e836f4f82c6618196fca1837
+  sha256: 177f265f3e3002267a56bc64593215bb716839bcbbc9852374a8dd4d50782ae3
 
 build:
   number: 0
