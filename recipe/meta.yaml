@@ -29,7 +29,7 @@ requirements:
     - holoviews
     - pandas
     - jupyter
-    - landlab >=1.9
+    - landlab >=1.9,<2b
 
 test:
   requires:
