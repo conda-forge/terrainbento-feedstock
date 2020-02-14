@@ -1,5 +1,5 @@
 
-{% set version = "1.1.1" %}
+{% set version = "2.0.0b1" %}
 
 package:
   name: terrainbento
@@ -7,7 +7,8 @@ package:
 
 source:
   url: https://github.com/TerrainBento/terrainbento/archive/v{{ version }}.tar.gz
-  sha256: 177f265f3e3002267a56bc64593215bb716839bcbbc9852374a8dd4d50782ae3
+  sha256: 73dbdd6721decf3b902b860fffd640502a58582a8d815b1878a82680dc5b2d6e
+
 
 build:
   number: 0
@@ -29,13 +30,14 @@ requirements:
     - holoviews
     - pandas
     - jupyter
-    - landlab >=1.9,<2b
+    - landlab >=2.0.0b5, <2
 
 test:
   requires:
     - pytest
     - pytest-cov
     - pytest-runner
+    - pytest-datadir
 
   imports:
     - terrainbento
