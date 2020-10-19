@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -26,9 +26,7 @@ requirements:
     - scipy
     - xarray
     - dask
-    - holoviews
     - pandas
-    - jupyter
     - landlab >=2.0.1
 
 test:
