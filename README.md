@@ -5,9 +5,13 @@ Home: https://terrainbento.github.io
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/terrainbento-feedstock/blob/master/LICENSE.txt)
 
 Summary: Multi-model package for earth surface processes
+
+Development: https://github.com/TerrainBento/terrainbento
+
+Documentation: https://terrainbento.readthedocs.io/
 
 A modular landscape evolution modeling package for mulit-model analysis built on top of the Landlab Toolkit.
 
