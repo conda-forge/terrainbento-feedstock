@@ -9,17 +9,17 @@ source:
   sha256: c34a9a4a606fbc1721395a0a8279bd6fae90ee3162a6ee46e97c2b9607c8cb0e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy
     - scipy
     - xarray
@@ -35,6 +35,7 @@ test:
     - pytest-cov
     - pytest-runner
     - pytest-datadir
+    - python {{ python_min }}
   imports:
     - terrainbento
   commands:
